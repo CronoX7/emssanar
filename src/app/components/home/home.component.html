@@ -1,0 +1,33 @@
+<div class="m-5">
+    <table class="table table-dark table-striped">
+        
+            <thead>
+              <tr>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Fecha de Nacimiento</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Ciudad</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let element of users">                
+                <td>{{element.nomAfiliado}}</td>
+                <td>{{element.apeAfiliado}}</td>
+                <td>{{element.fechaAfiliado}}</td>
+                <td>{{element.dirAfiliado}}</td>
+                <td>{{element.ciuAfiliado}}</td>
+                <td>{{element.telAfiliado}}</td>
+                <td class="m-5 p-2">
+                  <button class= "btn btn-danger bi bi-trash3-fill p-2">Eliminar</button>
+                  <button class="btn btn-warning bi bi-star-fill p-2">Editar</button>
+                </td>
+              </tr>
+            
+            </tbody>
+          
+    
+    </table>
+</div>

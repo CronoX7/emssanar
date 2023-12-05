@@ -1,0 +1,38 @@
+<div class="m-5 ">
+    <form class="row" #formulario="ngForm" (ngSubmit)="addUser(formulario);">
+        <div class="mb-3 col-sm-6">
+          <label class="form-label">Nombre del afiliado</label>
+          <input type="" class="form-control" id="nomAfiliado" name="nomAfiliado" [(ngModel)]="formDefault.nomAfiliado">
+          <div class="form-text">Uno o dos nombres</div>
+        </div>
+        <div class="mb-3 col-sm-6">
+          <label class="form-label">Apellidos del afiliado</label>
+          <input type="" class="form-control" id="apeAfiliado" name="apeAfiliado" [(ngModel)]="formDefault.apeAfiliado">
+          <div class="form-text">Ingrese los dos apellidos</div>
+        </div>
+        <div class="mb-3 col-sm-6">
+          <label class="form-label">Fecha de nacimiento</label>
+          <input type="date" class="form-control" id="fechaAfiliado" name="fechaAfiliado" [(ngModel)]="formDefault.fechaAfiliado">
+          <div class="form-text">Seleccione su fecha de nacimiento</div>
+        </div>
+        <div class="mb-3 col-sm-6">
+          <label class="form-label">Dirección del afiliado</label>
+          <input type="" class="form-control" id="dirAfiliado" name="dirAfiliado" [(ngModel)]="formDefault.dirAfiliado">
+          <div class="form-text">Ingrese su dirección</div>
+        </div>
+        <div class="mb-3 col-sm-6">
+          <label class="form-label">Ciudad</label>
+          <input type="" class="form-control" id="ciuAfiliado" name="ciuAfiliado" [(ngModel)]="formDefault.ciuAfiliado">
+          <div class="form-text">Ingrese la ciudad de residencia</div>
+        </div>
+        <div class="mb-3 col-sm-6">
+          <label class="form-label">Teléfono del afiliado</label>
+          <input type="" class="form-control" id="telAfiliado" name="telAfiliado" [(ngModel)]="formDefault.telAfiliado">
+          <div class="form-text">Ingrese el teléfono fijo o móvil</div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary col-sm-2" >Guardar</button>
+        </div>        
+      </form>
+</div>
+
